@@ -28,7 +28,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>pandas/README.md at master · KeithGalli/pandas</title>
+  <title>pandas/analysis.py at master · KeithGalli/pandas</title>
     <meta name="description" content="Data &amp; Code for my video on the Pandas library of Python - KeithGalli/pandas">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -39,10 +39,10 @@
     <meta property="og:image" content="https://avatars2.githubusercontent.com/u/6260748?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="KeithGalli/pandas" /><meta property="og:url" content="https://github.com/KeithGalli/pandas" /><meta property="og:description" content="Data &amp; Code for my video on the Pandas library of Python - KeithGalli/pandas" />
 
   <link rel="assets" href="https://github.githubassets.com/">
-      <link rel="shared-web-socket" href="wss://live.github.com/_luau/eyJ2IjoiVjMiLCJ1IjoyODc4MzkwMCwicyI6NTQzNTU4MTA3LCJjIjo5NjEwMjg0MjgsInQiOjE1OTMwNDUwODB9--96f103992308569977cf0b41d5713fc917078100971bac3238b7a4ca1b605cf8" data-refresh-url="/_ws">
+      <link rel="shared-web-socket" href="wss://live.github.com/_luau/eyJ2IjoiVjMiLCJ1IjoyODc4MzkwMCwicyI6NTQzNTU4MTA3LCJjIjoyOTIwODQ0Njc0LCJ0IjoxNTkzMDQ1MDg4fQ==--f3c946f3a69de2cdb116ebc6005f0bd2c596399da61cc61f10916686282f99f2" data-refresh-url="/_ws">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
-  <meta name="request-id" content="C606:33F5:5FFBD3:A078D7:5EF3F039" data-pjax-transient="true" /><meta name="html-safe-nonce" content="ac53450eca23ddba93dd3ef9272601c49d2b2084" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9LZWl0aEdhbGxpL3BhbmRhcy9maW5kL21hc3RlciIsInJlcXVlc3RfaWQiOiJDNjA2OjMzRjU6NUZGQkQzOkEwNzhENzo1RUYzRjAzOSIsInZpc2l0b3JfaWQiOiI3NDc2NTM2NzczOTA2NjQwNzQ0IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true" /><meta name="visitor-hmac" content="1a232349ebc277a88e792e096103fc450b5dba78563b9bb506b1cd426adb622e" data-pjax-transient="true" />
+  <meta name="request-id" content="C606:33F5:5FFCFE:A085C9:5EF3F058" data-pjax-transient="true" /><meta name="html-safe-nonce" content="ac53450eca23ddba93dd3ef9272601c49d2b2084" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9LZWl0aEdhbGxpL3BhbmRhcy9maW5kL21hc3RlciIsInJlcXVlc3RfaWQiOiJDNjA2OjMzRjU6NUZGQ0ZFOkEwODVDOTo1RUYzRjA1OCIsInZpc2l0b3JfaWQiOiI3NDc2NTM2NzczOTA2NjQwNzQ0IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true" /><meta name="visitor-hmac" content="73be26b3968512823630312635d782cbe9d7511293f57c74aa195318f50a8792" data-pjax-transient="true" />
 
 
 
@@ -81,7 +81,7 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="YWZhOGM5N2M0ZDFiNWJlZDc0NjdmMWU2NzY1ZWM3MTUzZDlhOWUyNDI5N2EyMzJiOGY0YjYyN2E1MGI5ZDBlNXx7InJlbW90ZV9hZGRyZXNzIjoiNzMuMTA2LjMyLjExMyIsInJlcXVlc3RfaWQiOiJDNjA2OjMzRjU6NUZGQkQzOkEwNzhENzo1RUYzRjAzOSIsInRpbWVzdGFtcCI6MTU5MzA0NTA4MCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+      <meta name="js-proxy-site-detection-payload" content="MzhiZWMzODgyMzg5MDVmYzA3M2E5ZjYzNTViNjFhNmY3NmViYmMwOGY3NjYwODAyZjg3MDQ3YjBiMjBiMDU2Nnx7InJlbW90ZV9hZGRyZXNzIjoiNzMuMTA2LjMyLjExMyIsInJlcXVlc3RfaWQiOiJDNjA2OjMzRjU6NUZGQ0ZFOkEwODVDOTo1RUYzRjA1OCIsInRpbWVzdGFtcCI6MTU5MzA0NTA4OCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
     <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,PAGE_STALE_CHECK,PRIMER_NEXT">
 
@@ -95,7 +95,7 @@
   <meta name="octolytics-dimension-user_id" content="6260748" /><meta name="octolytics-dimension-user_login" content="KeithGalli" /><meta name="octolytics-dimension-repository_id" content="151802157" /><meta name="octolytics-dimension-repository_nwo" content="KeithGalli/pandas" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="151802157" /><meta name="octolytics-dimension-repository_network_root_nwo" content="KeithGalli/pandas" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/KeithGalli/pandas/blob/master/README.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/KeithGalli/pandas/blob/master/analysis.py" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -169,7 +169,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" value="8Qeb/eY1eHo8X6MSDddClgW8RRK/cO+1AYrxBMNAs7UipVlph1JYKYFZo2HfLXsCOrEKcgw0R7PzmaH+7pyoow==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+          <input type="hidden" value="jrcGUeyJctvbgHa+AgRKWIaSHk6j77pF8iX5twm7s+xdFcTFje5SiGaGds3Q/nPMuZ9RLhCrEkMANqlNJGeo+g==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -320,7 +320,7 @@
       <img class="avatar avatar-user" src="https://avatars2.githubusercontent.com/u/28783900?s=40&amp;v=4" width="20" height="20" alt="@Arturowhite17" />
       Arturowhite17
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="yYgQ8YKoYI8pc0LoTC6wIZN2L+Zb0mrj66qYDWf2dqJBYA+DGjcOAUZbWYHMMOLXD85jWplQiwvf9NsjA9pmOw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="0oTF6cF2qRsE5upL+4YQyw7avrpb2R2x2d8alILg4vdabNqbWenHlWvO8SJ7mEI9kmLyBplb/FntgVm65szybg==" />
       <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-3 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm10.44 4.5H6.75a.75.75 0 000 1.5h5.69l-1.97 1.97a.75.75 0 101.06 1.06l3.25-3.25a.75.75 0 000-1.06l-3.25-3.25a.75.75 0 10-1.06 1.06l1.97 1.97z"></path></svg>
         Sign out
@@ -339,7 +339,7 @@
 
   <div class="Header-item mr-0 mr-lg-3 flex-order-1 flex-lg-order-none">
     
-    <a aria-label="You have no unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-sw js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6Mjg3ODM5MDAiLCJ0IjoxNTkzMDQ1MDgwfQ==--94af72322db9bda233825887f9df6a0a0153a98b46c671be57631d14181e3273" href="/notifications">
+    <a aria-label="You have no unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-sw js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6Mjg3ODM5MDAiLCJ0IjoxNTkzMDQ1MDg4fQ==--23e0a75c6c9f139e4a2e138d8ce2944484146c21e2aa859d64e3e43dc841379b" href="/notifications">
         <span class="js-indicator-modifier mail-status "></span>
         <svg class="octicon octicon-bell" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path></svg>
 </a>
@@ -413,7 +413,7 @@
   data-team-hovercards-enabled>
   <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
     <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
-      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:6260748,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:28783900,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;}}" data-hydro-click-hmac="e34574bb734960e3d632896317a0f6703ad6312d9e4d2afae6167292a02f58dd">
+      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:6260748,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:28783900,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;}}" data-hydro-click-hmac="ac01ce0542ae5f4f4b755d2d3da7cce0c41f447e2573d42a7f846f023e519abc">
       <div class="d-flex flex-items-center flex-items-stretch">
         <div class="f6 lh-condensed user-status-header d-flex user-status-emoji-only-header circle">
           <div class="user-status-emoji-container flex-shrink-0 mr-2 d-flex flex-items-center flex-justify-center lh-condensed-ultra v-align-bottom">
@@ -431,7 +431,7 @@
       </div>
     </summary>
     <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?circle=0&amp;compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="Rn8uEA4CU5rk8NnrX+sNnWmHmGkwKt5jFnlYzjGzWOapgf6oeH2nVp57NX3mgbFNoakuyjpcxLLEppNmXn4IiA==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?circle=0&amp;compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="wlZo5/MykgnZ35gzDNBWIvfMmsGpdCAU5nTNkb4A2WItqLhfhU1mxaNUdKW1uuryP+IsYqMCOsU0qwY50c2JDA==" />
         <div class="Box-header bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
@@ -549,17 +549,17 @@
       </li>
       <li class="dropdown-divider" role="none"></li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2020-06-24T21:01:20-04:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2020-06-24T21:01:28-04:00">
             in 30 minutes
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2020-06-24T21:31:20-04:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2020-06-24T21:31:28-04:00">
             in 1 hour
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2020-06-25T00:31:20-04:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2020-06-25T00:31:28-04:00">
             in 4 hours
           </button>
         </li>
@@ -595,22 +595,22 @@
       </div>
       <div role="none" class="dropdown-divider"></div>
 
-    <a role="menuitem" class="dropdown-item" href="/Arturowhite17" data-ga-click="Header, go to profile, text:your profile" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;target&quot;:&quot;YOUR_PROFILE&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="4ca1a0ffb2586748a37609051795334a47046df57a0cd482585ce51786adff69" >Your profile</a>
+    <a role="menuitem" class="dropdown-item" href="/Arturowhite17" data-ga-click="Header, go to profile, text:your profile" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;target&quot;:&quot;YOUR_PROFILE&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="811dd3cdd4c9ca19c270e9f49e106326f04c8bb70c8bd665f62948320eef4dba" >Your profile</a>
 
-    <a role="menuitem" class="dropdown-item" href="/Arturowhite17?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;target&quot;:&quot;YOUR_REPOSITORIES&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="69e8571a04f09d952e0f3a53fc0206332134839d837f50fab48745bb2e79eb7d" >Your repositories</a>
+    <a role="menuitem" class="dropdown-item" href="/Arturowhite17?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;target&quot;:&quot;YOUR_REPOSITORIES&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="169269a73310729c9757adb69a2636f23bc2e30d8d14342296ad4c7ebd48470a" >Your repositories</a>
 
 
-    <a role="menuitem" class="dropdown-item" href="/Arturowhite17?tab=projects" data-ga-click="Header, go to projects, text:your projects" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;target&quot;:&quot;YOUR_PROJECTS&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="861547edb23658180e798dea2977e83e264cc3d504659310df951329413c6095" >Your projects</a>
+    <a role="menuitem" class="dropdown-item" href="/Arturowhite17?tab=projects" data-ga-click="Header, go to projects, text:your projects" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;target&quot;:&quot;YOUR_PROJECTS&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="711006ca04a0f485796755c24dd98a42a54abf5b1c9f8f30a5f29c594334af75" >Your projects</a>
 
-    <a role="menuitem" class="dropdown-item" href="/Arturowhite17?tab=stars" data-ga-click="Header, go to starred repos, text:your stars" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;target&quot;:&quot;YOUR_STARS&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="afefb52c43870933c16f080871ec27167e241393c6df91645019c50322d4c734" >Your stars</a>
-      <a role="menuitem" class="dropdown-item" href="https://gist.github.com/mine" data-ga-click="Header, your gists, text:your gists" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;target&quot;:&quot;YOUR_GISTS&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="91a5ffb5217fb6ef18c91dd9cdbf088476d395213beab5b52a839a5dfc8ceecd" >Your gists</a>
+    <a role="menuitem" class="dropdown-item" href="/Arturowhite17?tab=stars" data-ga-click="Header, go to starred repos, text:your stars" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;target&quot;:&quot;YOUR_STARS&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="b3b7a24097576c79ba276438d6e0aa2d61c3f43f1127db32e767879d79e67bdb" >Your stars</a>
+      <a role="menuitem" class="dropdown-item" href="https://gist.github.com/mine" data-ga-click="Header, your gists, text:your gists" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;target&quot;:&quot;YOUR_GISTS&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="d65d48c75d0a447bf5eff9efc2af1d1496f504ac1e72f01e9a0bd47835ae29c8" >Your gists</a>
 
 
 
 
 
     <div role="none" class="dropdown-divider"></div>
-      <a role="menuitem" class="dropdown-item" href="/settings/billing" data-ga-click="Header, go to billing, text:upgrade" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;target&quot;:&quot;UPGRADE&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="cb1458fe1b784fadf828b9ec3b65d9e98ec6c153ea635b96060bd77cc36baef9" >Upgrade</a>
+      <a role="menuitem" class="dropdown-item" href="/settings/billing" data-ga-click="Header, go to billing, text:upgrade" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;target&quot;:&quot;UPGRADE&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="099e6fab5611740405feeb7247c86e8365d950c0cbce7b7288dbbc9c76312d6d" >Upgrade</a>
       
 <div id="feature-enrollment-toggle" class="hide-sm hide-md feature-preview-details position-relative">
   <button
@@ -618,24 +618,24 @@
     class="dropdown-item btn-link"
     role="menuitem"
     data-feature-preview-trigger-url="/users/Arturowhite17/feature_previews"
-    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}"
-    data-feature-preview-close-hmac="01c5d0330d834d097dcfbdcbd0d38fba5ef2abe1a80d289b0e3beb5deb31661c"
-    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}"
-    data-hydro-click-hmac="50a7276714f8a6cf155e1fe2eb364be8961fa9fd98e5e1fac899e28eedefcdea"
+    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}"
+    data-feature-preview-close-hmac="31c518aceecc394ee4569ccd29fc8d1e622352912484068ad3a2be992fedaac4"
+    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}"
+    data-hydro-click-hmac="6938f6e2a75161182e340bd4407dc5df85414c839a0ec0e44da83e11b2e4ecca"
   >
     Feature preview
   </button>
     <span class="feature-preview-indicator js-feature-preview-indicator" hidden></span>
 </div>
 
-    <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;target&quot;:&quot;HELP&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="7d5654627219dfa8374981583f21caadde2528011558c437295825857ffdff59" >Help</a>
-    <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;target&quot;:&quot;SETTINGS&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="d74b580e794aa87fee2c1ce3787ef0eb6f490cf56f8e68eb4ead7ef7cd395788" >Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="DU9egElqhuq0S9MAhhlQKjBavWtvDTkDt8Fgme3igTeFp0Hy0fXoZNtjyGkGBwLcrOLx162P2OuDnyO3ic6Rrg==" />
+    <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;target&quot;:&quot;HELP&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="1fe23743653a8138b835aaa4b33cbbb33199cbc6564d71affb092342cc21ffce" >Help</a>
+    <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;target&quot;:&quot;SETTINGS&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="04ca27f286edf43fb2bba17e26f3cb0279a9067857f1280ac1ac7a97e662a185" >Settings</a>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="bQV0Z3ZkiiS7yW8dj4dOhL//wnPK9VOfDnvgwx9Gb/bl7WsV7vvkqtThdHQPmRxyI0eOzwh3snc6JaPte2p/bw==" />
       
-      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;target&quot;:&quot;SIGN_OUT&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="3d1a66210ba946ff61263dfe71db989a0b2e0da1b40df1a1785e35d5fa477915"  role="menuitem">
+      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" data-hydro-click="{&quot;event_type&quot;:&quot;global_header.user_menu_dropdown.click&quot;,&quot;payload&quot;:{&quot;request_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;target&quot;:&quot;SIGN_OUT&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="bc25d15e7326a9af7423af634163a6f4859ad7b8d161e37b3d2c4491b018fb65"  role="menuitem">
         Sign out
       </button>
-      <input type="text" name="required_field_8ee6" hidden="hidden" class="form-control" /><input type="hidden" name="timestamp" value="1593045080400" class="form-control" /><input type="hidden" name="timestamp_secret" value="d7f0ac869433023a0d549318e00570b4af37a862e2a16d6257d85cd23924cfed" class="form-control" />
+      <input type="text" name="required_field_1128" hidden="hidden" class="form-control" /><input type="hidden" name="timestamp" value="1593045088255" class="form-control" /><input type="hidden" name="timestamp_secret" value="0ec69634bc1a083a335e039a16e5497fe8cddbe57885cc8883d5f7f4fa870ea2" class="form-control" />
 </form>  </details-menu>
 </details>
 
@@ -730,10 +730,10 @@
   <li>
     
 
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container clearfix" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="ZdMUHqcoJ0+pu9suadfbXV0HVYtXjU+PkRsaL5mVS0fO/OOU1Pi9wswTMHH2eu6owPYjr2L12hMpNUDiChIgTg==" />      <input type="hidden" name="repository_id" value="151802157">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container clearfix" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="OwYTyI7TlFWJBbIIliO9hMy9wzvopqZwzuN9u3AoP/GQKeRC/QMO2OytWVcJjohxUUy1H93eM+x2zSd2469U+A==" />      <input type="hidden" name="repository_id" value="151802157">
 
       <details class="details-reset details-overlay select-menu float-left" >
-        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="7f57ebce12262e8764f83a69f8d35ef6e4b59f652f6d9c7ffcd0ee7c9f1e83c9" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="c3e417b6424f5fb8691139ddefb3d4bcb48df56399ee48d691f26d0d2cf52626" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
               <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"></path></svg>
               Watch
           </span>
@@ -812,9 +812,9 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <form class="starred js-social-form" action="/KeithGalli/pandas/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="5jURbULkBSOQ8HKHS5Wyx6jHsHhfdhoDPyRWZxJBcDEd8STWP+uyBDgZRyLWOylQwEBvoWSE/KpzTNkUFZ4aGw==" />
+    <form class="starred js-social-form" action="/KeithGalli/pandas/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="MhKS2ya9hSiay7+pMF310WJKGFDamahmlpiczFCL7bfJ1qdgW7IyDzIiigyt825GCs3HieFrTs/a8BO/V1SHnQ==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Unstar KeithGalli/pandas" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="123381f3dd797764de5159ff3310ebef746615cc1aeac8a7b8ebf90d3993db94" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Unstar KeithGalli/pandas" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="bcca4a359a96111f3c40ec8038ef930837e12394778e2979970a8b38d0d6eecb" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
 
         Unstar
 </button>        <a class="social-count js-social-count" href="/KeithGalli/pandas/stargazers"
@@ -822,9 +822,9 @@
            193
         </a>
 </form>
-    <form class="unstarred js-social-form" action="/KeithGalli/pandas/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="M1rYkLYkvSodsWjEKxX8lV7mbs650eNKdwcxfQ9vuYSly8DNPcH8mPAcGGo+060HBMAF8/tPIlvgx8tpyirrRw==" />
+    <form class="unstarred js-social-form" action="/KeithGalli/pandas/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="cEviSLPiNVGE5qtdpAynvYomchj3T7Fex3LDAZT3rIrm2voVOAd042lL2/OxyvYv0AAZJbXRcE9QsjkVUbL+SQ==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Star KeithGalli/pandas" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="6623f2bce16afc28f6d2ffc0b978eba7ad8e8faa637c77ff44a31a3cdf2e719c" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg height="16" class="octicon octicon-star" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Star KeithGalli/pandas" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="5eb4c14ce392545d38ac9121e3c40712b528e026ebbfc3a732b57acfd9d9fc32" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg height="16" class="octicon octicon-star" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
 
         Star
 </button>        <a class="social-count js-social-count" href="/KeithGalli/pandas/stargazers"
@@ -836,8 +836,8 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/KeithGalli/pandas/fork" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="qmLR5OLYThmdt9Zj4CZAVpfdIPTt4N1q5ZB93zWXEhINaB65Bd+6B+YLETXBs9P5P7o4Vu5loDk3YgtzX0JVBw==" />
-            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="6cd95d069339c2fc7c7e3fffa8faf39a15cb2b9f4d9e2bfaa0974fc4ae7142c2" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of KeithGalli/pandas to your account" aria-label="Fork your own copy of KeithGalli/pandas to your account">              <svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/KeithGalli/pandas/fork" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="vZcOoILUIXsSv5aKjAVyZujUWIcooR2WEGIWsC86hMIancH9ZdPVZWkDUdytkOHJQLNAJSskYMXCkGAcRe/D1w==" />
+            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="af4ff4d777546505b5bb5a2083851f9a227c6d5128d9b5b8c506bbfeb41468da" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of KeithGalli/pandas to your account" aria-label="Fork your own copy of KeithGalli/pandas to your account">              <svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
               Fork
 </button></form>
     <a href="/KeithGalli/pandas/network/members" class="social-count"
@@ -976,9 +976,9 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/KeithGalli/pandas/blob/d0025fc924d0eb00aa65a157e5086001fda0b780/README.md">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/KeithGalli/pandas/blob/d0025fc924d0eb00aa65a157e5086001fda0b780/analysis.py">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v22:f8fb1a02d83d948f4752d12f34066277 -->
+    <!-- blob contrib key: blob_contributors:v22:4ed4ed370c800db975678fd4d7d57133 -->
     
 
     <div class="d-flex flex-items-center flex-shrink-0 pb-3 flex-wrap flex-justify-between flex-md-justify-start">
@@ -994,7 +994,7 @@
     <span class="dropdown-caret"></span>
   </summary>
 
-  <details-menu class="SelectMenu SelectMenu--hasFilter" src="/KeithGalli/pandas/refs/master/README.md?source_action=show&amp;source_controller=blob" preload>
+  <details-menu class="SelectMenu SelectMenu--hasFilter" src="/KeithGalli/pandas/refs/master/analysis.py?source_action=show&amp;source_controller=blob" preload>
     <div class="SelectMenu-modal">
       <include-fragment class="SelectMenu-loading" aria-label="Menu is loading">
         <svg class="octicon octicon-octoface anim-pulse" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"></path></svg>
@@ -1004,7 +1004,40 @@
 </details>
 
       <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal mx-0 mx-md-3 width-full width-md-auto flex-order-1 flex-md-order-none mt-3 mt-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/KeithGalli/pandas"><span>pandas</span></a></span></span><span class="separator">/</span><strong class="final-path">README.md</strong>
+        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/KeithGalli/pandas"><span>pandas</span></a></span></span><span class="separator">/</span><strong class="final-path">analysis.py</strong>
+          <span class="separator">/</span><details class="details-reset details-overlay d-inline" id="jumpto-symbol-select-menu">
+  <summary class="btn-link link-gray css-truncate" aria-haspopup="true" data-hotkey="r" data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_blob_definitions&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_blob_definitions&quot;,&quot;repository_id&quot;:151802157,&quot;ref&quot;:&quot;master&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="2a7e9f1587cf5e020250f9481d1edc37f7a76c2303deed92a381e01ffd00991e">
+      <svg class="octicon octicon-code" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path></svg>
+    <span data-menu-button>Jump to</span>
+    <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="SelectMenu SelectMenu--hasFilter" role="menu">
+    <div class="SelectMenu-modal">
+      <header class="SelectMenu-header">
+        <span class="SelectMenu-title">Code definitions</span>
+        <button class="SelectMenu-closeButton" type="button" data-toggle-for="jumpto-symbol-select-menu">
+          <svg aria-label="Close menu" class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+        </button>
+      </header>
+      <div class="SelectMenu-list">
+          <div class="SelectMenu-blankslate">
+            <p class="mb-0 text-gray">
+              No definitions found in this file.
+            </p>
+          </div>
+        <div data-filterable-for="jumpto-symbols-filter-field" data-filterable-type="substring">
+        </div>
+      </div>
+      <footer class="SelectMenu-footer">
+        <div class="d-flex flex-justify-between">
+          Code navigation not available for this commit
+          <svg class="octicon octicon-dot-fill text-light-gray" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+        </div>
+      </footer>
+    </div>
+  </details-menu>
+</details>
+
       </h2>
         <a href="/KeithGalli/pandas/find/master"
               class="js-pjax-capture-input btn mr-2 d-none d-md-block"
@@ -1023,7 +1056,7 @@
 </summary>
               <ul class="dropdown-menu dropdown-menu-sw">
               <li class="d-block d-md-none">
-                <a class="dropdown-item d-flex flex-items-baseline" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="cbdcd988abba6092db68430d6727ad63ee067a6d5ff581f3a87e3eb6af08f5fc" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/KeithGalli/pandas/find/master">
+                <a class="dropdown-item d-flex flex-items-baseline" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:151802157,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}" data-hydro-click-hmac="860afc83070b92a6ed6b981d092686d56cd65d8f7c16cea56d8c33b4daa08700" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/KeithGalli/pandas/find/master">
                   <span class="flex-auto">Go to file</span>
                   <span class="text-small text-gray" aria-hidden="true">T</span>
 </a>              </li>
@@ -1035,9 +1068,17 @@
                   </span>
                 </button>
               </li>
+              <li data-toggle-for="blob-more-options-details">
+                <button type="button" data-toggle-for="jumpto-symbol-select-menu" class="btn-link dropdown-item">
+                  <span class="d-flex flex-items-baseline">
+                    <span class="flex-auto">Go to definition</span>
+                    <span class="text-small text-gray" aria-hidden="true">R</span>
+                  </span>
+                </button>
+              </li>
               <li class="dropdown-divider" role="none"></li>
               <li>
-                <clipboard-copy value="README.md" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details">
+                <clipboard-copy value="analysis.py" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details">
                   Copy path
                 </clipboard-copy>
               </li>
@@ -1049,7 +1090,7 @@
 
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-      <include-fragment src="/KeithGalli/pandas/contributors/master/README.md" class="commit-loader">
+      <include-fragment src="/KeithGalli/pandas/contributors/master/analysis.py" class="commit-loader">
         <div class="Box-header Box-header--blue d-flex flex-items-center">
             <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
             <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
@@ -1072,35 +1113,35 @@
 <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
 
-      7 lines (4 sloc)
+      6 lines (3 sloc)
       <span class="file-info-divider"></span>
-    301 Bytes
+    82 Bytes
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/KeithGalli/pandas/raw/master/README.md">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/KeithGalli/pandas/blame/master/README.md">Blame</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/KeithGalli/pandas/raw/master/analysis.py">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/KeithGalli/pandas/blame/master/analysis.py">Blame</a>
     </div>
 
 
     <div>
           <a class="btn-octicon tooltipped tooltipped-nw js-remove-unless-platform"
              data-platforms="windows,mac"
-             href="x-github-client://openRepo/https://github.com/KeithGalli/pandas?branch=master&amp;filepath=README.md"
+             href="x-github-client://openRepo/https://github.com/KeithGalli/pandas?branch=master&amp;filepath=analysis.py"
              aria-label="Open this file in GitHub Desktop"
              data-ga-click="Repository, open with desktop">
               <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z"></path></svg>
           </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/KeithGalli/pandas/edit/master/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="qcBmiRXEDl+oDhqWrllXpNt8UmO/VWDj10ZHc4QJUVK3d89CfRaBSZSNjb93t1gpvvUN++rpukXb38N4c6HclQ==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/KeithGalli/pandas/edit/master/analysis.py" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="8TkPUUA6OZwWoqG6P6nyewPceV2/K4YegMaKfaaRqfm9Jp02MI5TJKs2X17fdirPQedz7B48LW5PlY2FHQ3hog==" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
               <svg class="octicon octicon-pencil" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path></svg>
             </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/KeithGalli/pandas/delete/master/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Ime3++FC+2NnL8sCt8UxVPiV5nD/oj5guKXGEaA2LSa0ldxJ2O58kzVSPQ5exRyF7bu1kwecKHIm0tUVZVs1Uw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/KeithGalli/pandas/delete/master/analysis.py" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="T5RPtJmk4lp5mGjK0xJSfDyHOd6VrHJ/R26iz+JJotVIqZr6RMIPn/3kE6fG8Q1igGXsbi5o8ehL5gu2sYRkVQ==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and delete the file" data-disable-with>
               <svg class="octicon octicon-trashcan" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z"></path></svg>
@@ -1110,14 +1151,76 @@
 </div>
 
 
+        <div class="js-notice border-bottom p-2">
+          <div class="d-flex rounded-1 code-navigation-banner">
+            <div class="col-6 pt-4 pl-4 pb-4">
+              <div class="d-flex flex-items-center f6">
+                <h3 class="mr-2">Code navigation is available!</h3>
+              </div>
+              <p class="text-gray pt-2">
+                Navigate your code with ease. Click on function and method calls to jump to their definitions or references in the same repository.
+                <a href="https://help.github.com/en/articles/navigating-code-on-github">Learn more</a>
+              </p>
+            </div>
+            <div class="col-6 p-2 text-right code-navigation-banner-illo">
+              <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-notice-dismiss" action="/settings/dismiss-notice/aleph_code_navigation_banner" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="q7xEqffLm2muNx4MX0yG5vrPOGhI4zOKwTEVbbC1gnwA1NWn0xRE/gEKEr5A2k2aDtTV/+HkfDEY6hJHZAGZDg==" />
+                <button name="button" type="submit" class="btn-link link-gray" aria-label="Dismiss">
+                  <svg width="20" height="20" class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+</button></form>            </div>
+          </div>
+        </div>
 
       
-  <div id="readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6">
-    <article class="markdown-body entry-content container-lg" itemprop="text"><h1><a id="user-content-pandas" class="anchor" aria-hidden="true" href="#pandas"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>pandas</h1>
-<p>Data &amp; Code associated with my tutorial video on the pandas library of Python.</p>
-<p>Video found here: <a href="https://youtu.be/vmEHCJofslg" rel="nofollow">https://youtu.be/vmEHCJofslg</a></p>
-<p>If you have any trouble with this repo, probably leaving a comment on the video is the best way to reach me and I'll try to resolve the issue as soon as possible!</p>
-</article>
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-python ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-s1>pandas</span> <span class=pl-k>as</span> <span class=pl-s1>pd</span></td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>poke</span> <span class=pl-c1>=</span> <span class=pl-s1>pd</span>.<span class=pl-en>read_csv</span>(<span class=pl-s>&#39;pokemon_data.csv&#39;</span>)</td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class=pl-en>print</span>(<span class=pl-s1>poke</span>.<span class=pl-en>tail</span>(<span class=pl-c1>5</span>))</td>
+      </tr>
+</table>
+
+  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
+    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
+      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+    </summary>
+    <details-menu>
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
+            Copy lines
+          </clipboard-copy>
+        </li>
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
+            Copy permalink
+          </clipboard-copy>
+        </li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/KeithGalli/pandas/blame/d0025fc924d0eb00aa65a157e5086001fda0b780/analysis.py">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/KeithGalli/pandas/issues/new">Reference in new issue</a></li>
+      </ul>
+    </details-menu>
+  </details>
+
   </div>
 
     </div>
@@ -1138,10 +1241,10 @@
      hidden
      data-tagsearch-url="/KeithGalli/pandas/find-symbols"
      data-tagsearch-ref="master"
-     data-tagsearch-path="README.md"
-     data-tagsearch-lang="Markdown"
-     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:151802157,&quot;ref&quot;:&quot;master&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/README.md&quot;,&quot;user_id&quot;:28783900}}"
-     data-hydro-click-hmac="9cc9cb5111a09f88978031232faa3c2f13159fd0880bf8df05b24bff507c6f9d">
+     data-tagsearch-path="analysis.py"
+     data-tagsearch-lang="Python"
+     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:151802157,&quot;ref&quot;:&quot;master&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;originating_url&quot;:&quot;https://github.com/KeithGalli/pandas/blob/master/analysis.py&quot;,&quot;user_id&quot;:28783900}}"
+     data-hydro-click-hmac="5c231db9125ce7ba85c96720c1a13e40f8473dda3be7b72b65dff5a92bd1ca4b">
   <div class="Popover-message Popover-message--large Popover-message--top-left TagsearchPopover mt-1 mb-4 mx-auto Box box-shadow-large">
     <div class="TagsearchPopover-content js-tagsearch-popover-content overflow-auto" style="will-change:transform;">
     </div>
